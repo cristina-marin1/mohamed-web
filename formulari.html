@@ -18,15 +18,19 @@
 </head>
 <body>
  <h1>Formulari de contacte</h1>
- <data-netlify="true">
- <form name="formulari" method="POST" data-netlify="true">
- <label for="nom">Nom:</label>
- <input type="text" id="nom" name="nom" required>
- <label for="email">Correu electrònic:</label>
- <input type="email" id="email" name="email" required>
- <label for="missatge">Missatge:</label>
- <textarea id="missatge" name="missatge" rows="4" required></textarea>
- <button type="submit">Enviar</button>
- </form>
+<form name="formulari" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="formulari">
+  
+  <label for="nom">Nom:</label>
+  <input type="text" id="nom" name="nom" required>
+
+  <label for="email">Correu electrònic:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="missatge">Missatge:</label>
+  <textarea id="missatge" name="missatge" rows="4" required></textarea>
+
+  <button type="submit">Enviar</button>
+</form>
 </body>
 </html>
